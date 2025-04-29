@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 
 const Silder = () => {
     return (
-        <div className='max-lg:pb-[44px]'>
+        <div className='max-lg:pb-[44px] pb-[30px]'>
             <div className="2xl:container">
                 <h2 className='text-[#00171F] font-normal text-5xl max-md:text-3xl leading-[52.8px] pb-4 text-center'>
                     Simple Steps to <span className='font-bold'>Switch</span>
