@@ -19,7 +19,7 @@ const Silder = () => {
 
                     modules={[Autoplay]}
                     autoplay={{
-                        delay: 2000,
+                        delay: 3000,
                         disableOnInteraction: false,
                     }}
                     className="mySwiper"
