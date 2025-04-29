@@ -32,8 +32,8 @@ const Silder = () => {
                 >
                     {cardLIST.map((item, index) => (
                         <SwiperSlide key={index}>
-                                      <div className='relative group overflow-hidden max-md:max-h-[450px] max-w-[360px] w-full mx-auto'>
-                                <img  className='max-w-[360px] max-lg:w-full ' src={item.img} alt={item.alt}/>
+                                      <div className='relative group overflow-hidden  w-full mx-auto'>
+                                <img  className='w-full  ' src={item.img} alt={item.alt}/>
                                 <div className='absolute top-0 left-0 w-full h-full group-hover:opacity-0 transition-all duration-700 ease-in-out  bg-[#EAF9FFF0]  '>
                                     <div className='relative w-full h-full flex justify-center items-center '>
                                         <p className=' text-[32px]  max-md:text-[20px] text-[#00171F] group-hover:opacity-100  transition-all duration-700 ease-in-out  -rotate-90  whitespace-nowrap '>
