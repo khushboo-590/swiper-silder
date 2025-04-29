@@ -40,7 +40,7 @@ const Silder = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className=' group-hover:bg-[#003459] absolute top-[50%] group-hover:top-[70%] group-hover:opacity-100 opacity-0 transition-all duration-700 ease-out w-full p-8 max-md:p-3'>
+                                <div className=' group-hover:bg-[#003459] absolute  group-hover:top-[75%] group-hover:opacity-100 opacity-0 transition-all duration-700 ease-out w-full p-8 max-md:p-3'>
                                     <h4 className='text-[32px] font-normal pb-3 text-white max-md:text-2xl max-md:pb-1.5'>{item.title}</h4>
                                     <p className='text-white text-base max-md:text-base'>{item.description}</p>
                                 </div>
