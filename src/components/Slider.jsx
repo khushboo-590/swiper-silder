@@ -19,32 +19,33 @@ const Silder = () => {
 
                     modules={[Autoplay]}
                     autoplay={{
-                        delay: 3000,
+                        delay: 2000,
                         disableOnInteraction: false,
                     }}
                     className="mySwiper"
                     breakpoints={{
-                        320: { slidesPerView: 1, centeredSlides: false },
-                        640: { slidesPerView: 2, centeredSlides: false },
-                        992: { slidesPerView: 3, centeredSlides: false },
-                        1200: { slidesPerView: 4, centeredSlides: false },
+                        320: { slidesPerView: 1 },
+                        630: { slidesPerView: 2 },
+                        992: { slidesPerView: 3 },
+                        1200: { slidesPerView: 4},
                     }}
                 >
                     {cardLIST.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className='relative group overflow-hidden max-md:max-h-[450px] max-w-[360px] w-full mx-auto'>
-                                <img className='max-w-[360px] max-lg:w-full' src={item.img} alt={item.alt} />
-                                <div className='absolute group-hover:h-0 group-hover:w-0 group-hover:top-1/2 group-hover:left-full group-hover:translate-y-full group-hover:translate-x-[-50%] group-hover:opacity-90 group-hover:z-10 duration-700 ease-in-out bg-[#EAF9FFF0] opacity-94 top-0 left-0 w-full h-full'>
-                                    <div className='relative w-full h-full'>
-                                        <p className={`absolute translate-x-[-50%] text-center leading-custom-2xl text-[32px] max-md:text-xl text-[#00171F] -rotate-90 min-w-[574px] group-hover:hidden ${index === 0 ? "top-1/2 left-1/2" : index === 1 ? "top-[68%] left-1/2" : index === 2 ? "top-[74%] left-1/2" : index === 3 ? "top-[65.5%] left-1/2" : ""}`}>{item.imgContent}</p>
+                                      <div className='relative group overflow-hidden max-md:max-h-[450px] max-w-[360px] w-full mx-auto'>
+                                <img  className='max-w-[360px] max-lg:w-full ' src={item.img} alt={item.alt}/>
+                                <div className='absolute top-0 left-0 w-full h-full group-hover:opacity-0 transition-all duration-700 ease-in-out  bg-[#EAF9FFF0]  '>
+                                    <div className='relative w-full h-full flex justify-center items-center '>
+                                        <p className='text-center text-[32px]  text-[#00171F] group-hover:opacity-100  transition-all duration-700 ease-in-out  -rotate-90  whitespace-nowrap'>
+                                            {item.imgHeading}
+                                        </p>
                                     </div>
                                 </div>
-                                <div className='bg-[#003459] absolute top-[-50%] group-hover:top-[75%] max-md:group-hover:top-[65%] group-hover:bottom-0 duration-700 ease-in-out w-full p-8 max-md:p-3'>
-                                    <h4 className='leading-[35.2px] text-[32px] font-normal pb-3 text-white max-md:text-2xl max-md:pb-1.5'>{item.title}</h4>
-                                    <p className='leading-[25.6px] font-normal text-white text-base max-md:text-base'>{item.description}</p>
+                                <div className=' group-hover:bg-[#003459] absolute top-[50%] group-hover:top-[70%] group-hover:opacity-100 opacity-0 transition-all duration-700 ease-out w-full p-8 max-md:p-3'>
+                                    <h4 className='text-[32px] font-normal pb-3 text-white max-md:text-2xl max-md:pb-1.5'>{item.title}</h4>
+                                    <p className='text-white text-base max-md:text-base'>{item.description}</p>
                                 </div>
                             </div>
-
                         </SwiperSlide>
                     ))}
                 </Swiper>
