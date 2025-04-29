@@ -36,7 +36,7 @@ const Silder = () => {
                                 <img  className='max-w-[360px] max-lg:w-full ' src={item.img} alt={item.alt}/>
                                 <div className='absolute top-0 left-0 w-full h-full group-hover:opacity-0 transition-all duration-700 ease-in-out  bg-[#EAF9FFF0]  '>
                                     <div className='relative w-full h-full flex justify-center items-center '>
-                                        <p className='text-center text-[32px]  text-[#00171F] group-hover:opacity-100  transition-all duration-700 ease-in-out  -rotate-90  whitespace-nowrap'>
+                                        <p className=' text-[32px]  max-md:text-[20px] text-[#00171F] group-hover:opacity-100  transition-all duration-700 ease-in-out  -rotate-90  whitespace-nowrap '>
                                             {item.imgHeading}
                                         </p>
                                     </div>
